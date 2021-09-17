@@ -1,0 +1,24 @@
+# config to run run_fit_dat.py
+# example call run_fit_dat.py cmd_fit_config.yaml
+
+# Data locations
+onstream_cat    : "/data/des81.b/data/tavangar/streams/cmd_fit/phoenix_onstream.npy"
+offstream_cat   : "/data/des81.b/data/tavangar/streams/cmd_fit/phoenix_offstream.npy"
+output_file     : "/data/des81.b/data/tavangar/streams/cmd_fit/output/run_2p1_ws_2.pkl"
+
+# model parameters
+DISTANCE_MOD    : 16.3
+G_MIN           : -0.2
+G_MAX           : 7.5
+R_MIN           : -0.2
+R_MAX           : 7.5
+GR_MIN          : 0.0
+GR_MAX          : 1.0
+BIN_SIZE        : 0.05
+ISO_TYPE        : 'Dotter2008'
+# running parameters
+multi           : 10 # n cores to use
+nsteps          : 100
+nwalkers        : 40
+ndim            : 3
+wscale          : 1  # this is the area scaling the background region to match the on-stream region
